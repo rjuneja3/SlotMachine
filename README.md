@@ -1,3 +1,5 @@
-# COMP397-W2020-Lesson4A
+# COMP397-W2020
 
-## Demo for Web Game Programming for Game Students @ Centennial
+## Slot Machine - Assignment 1
+
+#By: Rohan Juneja 
