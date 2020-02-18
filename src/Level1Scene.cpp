@@ -238,6 +238,7 @@ void Level1Scene::spin()
 		if (getBalance() < getBet())
 		{
 			m_pWinLabel->setText("No Money to Spin");
+			
 			m_pSpinButton->setMouseButtonClicked(false);
 		}
 		//If the bet is 0, raise bet error
@@ -294,6 +295,10 @@ void Level1Scene::spin()
 
 }
 
+glm::vec2 Level1Scene::getMousePosition()
+{
+	return m_mousePosition;
+}
 void Level1Scene::decreaseMoney(int theBet)
 {
 	//Check if no clicks has done before and decrease the bet amount from your money only once
@@ -312,10 +317,6 @@ void Level1Scene::decreaseMoney(int theBet)
 	}
 }
 
-glm::vec2 Level1Scene::getMousePosition()
-{
-	return m_mousePosition;
-}
 
 //sets the balance initially
 void Level1Scene::setBalance(int money)

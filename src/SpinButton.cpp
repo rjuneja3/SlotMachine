@@ -21,9 +21,9 @@ bool SpinButton::ButtonClick()
 	{
 		if (!m_isClicked)
 		{
-			
-			std::cout << "Spin Button Clicked!" << std::endl;
 			TheSoundManager::Instance()->load("../Assets/audio/mouseclick.wav", "yay", SOUND_SFX);
+			std::cout << "Spin Button Clicked!" << std::endl;
+			
 			m_isClicked = true;
 		}
 		return true;
@@ -40,7 +40,7 @@ int SpinButton::countsClickOnce()
 	return m_pClickFlag;
 }
 
-void SpinButton::setClickOnce(int clickCount)
+void SpinButton::setClickOnce(int clickFlag)
 {
-	m_pClickFlag = clickCount;
+	m_pClickFlag = clickFlag;
 }
