@@ -1,3 +1,9 @@
+/*
+* Author name: Rohan Juneja
+* Student ID: 300987725
+* Game Description: Simple Slot Machine Game made in C++. The user has to mak ebets and it's his luck if he wins or loses his money.
+* Last Revision date: Feb 17, 2020 
+*/
 #include "BetButton.h"
 #include "Game.h"
 
